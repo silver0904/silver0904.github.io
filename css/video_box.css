@@ -1,0 +1,106 @@
+.video_box{
+	width:40%;
+	max-width: 400px;
+	height:auto;
+	text-decoration:none;
+	position:relative;
+	display: inline-block;
+	float: left;
+	background-color: #50507c;
+	margin: 1%;
+	border: none;
+	padding:5px;
+	z-index : 1;	
+}
+
+.video_box img{
+	max-width:400px;
+	width:100%;
+	height:auto;
+	position:relative;
+	display:block;
+	margin:auto;
+	padding:0px;
+}
+
+.video_box .text_title{
+	display:block;
+	font-family: "cwTeXHei", sans-serif;
+	color: white;
+	height:40px;
+}
+
+.video_box:hover{
+	width: 40%;
+	z-index: 2;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: #99ddff;
+}
+
+.video_box:hover .text_title{
+	color: #28283e;
+}
+
+#video_window{
+	display: none;
+	position: fixed;
+	z-index: 4;
+	left:0;
+	top: 0;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.video_content {
+    position: relative;
+    background-color: #50507c;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+	overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+	z-index: 4;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color:#99ddff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup{
+	background-color: #50507c;
+	height: 100%;
+	padding-bottom:5%;
+}
+
+.popup iframe{
+	display:block;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+

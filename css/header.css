@@ -1,0 +1,22 @@
+header{
+	padding: 50px;
+	background-image: url("../img/cover.jpg");
+}
+header #top_container{
+	display: block;
+	background-color: #1e1e2f;
+	padding: 10px;
+	opacity: 0.7;
+}
+header h1{
+	position: relative;
+	left:15%;
+	font-size: 48px;
+	color: #e6f7ff;
+}
+header h2{
+	position: relative;
+	left:10%;
+	font-size: 28px;
+	color: #99ddff;
+}
