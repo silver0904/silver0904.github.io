@@ -8,6 +8,7 @@
 
 .slide_show{
 	position:relative;
+	max-width: 900px;
 }
 
 .slide_des{
